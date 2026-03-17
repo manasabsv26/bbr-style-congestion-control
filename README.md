@@ -1,4 +1,13 @@
-## Why BBR (Bottleneck Bandwidth and Round-trip propagation time)?
+## BBR (Bottleneck Bandwidth and Round-trip propagation time) Style Congestion Control Algorithm
+
+Developed a BBR-style congestion control algorithm as part of the CSCI-551 Computer Networks course at the University of Southern California (USC); the source code cannot be publicly shared due to course academic policies. This implementation is based on the BBR congestion control algorithm described by Cardwell et al. in:
+```
+P9. [Cardwell17a] Neal Cardwell, Yuchung Cheng, C. Stephen Gunn, Soheil Hassas Yeganeh, and Van
+Jacobson. BBR: Congestion-based congestion control. Communications of the ACM, 60(2):58–66, February
+2017. (https://dl.acm.org/doi/10.1145/3009824)
+```
+
+## Why BBR?
 
 Traditional congestion control algorithms like TCP Reno rely on packet loss as a signal for congestion, which often leads to buffer buildup, increased latency, and inefficient bandwidth utilization. BBR takes a different approach by modeling the network and estimating key network parameters instead of reacting after congestion occurs. This allows it to achieve higher throughput while maintaining lower latency.
 
